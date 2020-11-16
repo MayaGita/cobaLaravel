@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-  
-    protected $primaryKey ="students_id";
+    //jika nama tabel tidak jamak dan berbeda dengan nama model maka :
+
+    //protected $table = 'mahasiswa';
 }
