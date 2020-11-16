@@ -12,7 +12,7 @@
 				<tr>
 				  <th scope='col'>No</th>
 				  <th scope='col'>Nama</th>
-				  <th scope='col'>Nrp</th>
+				  <th scope='col'>NRP</th>
 				  <th scope='col'>Email</th>
 				  <th scope='col'>Jurusan</th>
 				  <th scope='col'>aksi</th>
