@@ -12,7 +12,7 @@ class PagesController extends Controller
         return view('index');
     }
     public function about(){
-        $nama= 'Haruto';
+        $nama= 'Lee Jeno';
         return view('about',['nama' => $nama]);
     }
 }

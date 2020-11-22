@@ -28,3 +28,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\PagesController@home');
 Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/mahasiswa', 'App\Http\Controllers\MahasiswaController@index');
+
+//students
+// Route::get('/students', 'App\Http\Controllers\StudentsController@index');
+// Route::get('/students/create', 'App\Http\Controllers\StudentsController@create');
+// Route::get('/students/{student}', 'App\Http\Controllers\StudentsController@show');
+// Route::POST('/students', 'App\Http\Controllers\StudentsController@store');
+// Route::delete('/students/{student}', 'App\Http\Controllers\StudentsController@destroy');
+// Route::get('/students/edit/{student}', 'App\Http\Controllers\StudentsController@edit');
+// Route::patch('/students/{student}',  'App\Http\Controllers\StudentsController@update' );
+Route::resource('students' ,  'App\Http\Controllers\StudentsController');

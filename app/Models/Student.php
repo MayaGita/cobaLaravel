@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 
 class Student extends Model
 {
-    //jika nama tabel tidak jamak dan berbeda dengan nama model maka :
-
-    //protected $table = 'mahasiswa';
+    use SoftDeletes;
+    protected $fillable =['nama' , 'NRP', 'email', 'jurusan'];
 }
