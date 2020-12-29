@@ -2,6 +2,7 @@
 @section('title', 'Form tambah data Mahasiswa')
 
 @section('container')
+<div class="wrapper">   
     <div class="container">
     	<div class="row">
     		<div class="col-10">
@@ -41,6 +42,6 @@
 		      </div>
     	</div>
     </div>
-    
+</div>    
 @endsection
     

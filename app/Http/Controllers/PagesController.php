@@ -12,7 +12,8 @@ class PagesController extends Controller
         return view('index');
     }
     public function about(){
-        $nama= 'Lee Jeno';
+        $nama= 'Neo university';
         return view('about',['nama' => $nama]);
     }
+    
 }

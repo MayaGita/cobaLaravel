@@ -25,9 +25,16 @@ use Illuminate\Support\Facades\Route;
 
 //menampilkan view melalui controller method
 
-Route::get('/', 'App\Http\Controllers\PagesController@home');
-Route::get('/about', 'App\Http\Controllers\PagesController@about');
-Route::get('/mahasiswa', 'App\Http\Controllers\MahasiswaController@index');
+Route::get('/', 'App\Http\Controllers\AuthController@login');
+Route::POST('/postlogin', 'App\Http\Controllers\AuthController@postlogin');
+Route::get('/logout', 'App\Http\Controllers\AuthController@logout');
+
+Route::get('/home', 'App\Http\Controllers\PagesController@home');
+
+
+
+Route::get('/about', 'App\Http\Controllers\PagesController@about'); 
+
 
 //students
 // Route::get('/students', 'App\Http\Controllers\StudentsController@index');
